@@ -1,0 +1,49 @@
+{
+  "name": "vscode-iterm-terminals",
+  "displayName": "iTerm Terminals Manager",
+  "description": "Manages iTerm terminals based on workspace configuration",
+  "version": "0.0.1",
+  "publisher": "ddfourtwo",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:.vscode/iterm-terminals.json"
+  ],
+  "main": "./out/extensions.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "iterm-terminals.openTerminals",
+        "title": "Open iTerm Terminals"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddfourtwo/vscode-iterm-terminals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ddfourtwo/vscode-iterm-terminals/issues"
+  },
+  "homepage": "https://github.com/ddfourtwo/vscode-iterm-terminals#readme",
+  "keywords": [
+    "iterm",
+    "terminal",
+    "terminals",
+    "workspace",
+    "macos"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/vscode": "^1.94.0",
+    "typescript": "^5.6.3",
+    "vscode-test": "^1.6.1"
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  }
+}
